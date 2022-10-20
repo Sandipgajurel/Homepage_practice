@@ -1,3 +1,6 @@
+.parent{
+width: 100%;
+}
 .first-content{
     background-color: rgb(217, 242, 242);
   display: flex;
@@ -5,12 +8,13 @@
   height: 500px;
 }
 
+
 .content1{
     max-width: 600px;
 }
 .btn1{
     border: none;
-    background-color: blue;
+    background-color: #1fa6b8;
     font-size: 17px;
     color: white;
     padding: 10px;
@@ -71,8 +75,9 @@
   .blue-text{
     color: rgb(6, 158, 239);
   }
-  p{
+  .paragraph{
     margin:15px;
+    text-align: left;
   }
 
   /* for 3rd content */
@@ -92,6 +97,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
+  }
+  @media screen and (max-width: 500px) {
+    .row3 {
+      flex-direction: column;
+    }
   }
  
   .column3-right{
@@ -148,3 +158,243 @@ display: inline-block;
   }
 }
 
+/* for content fifth */
+
+.content-fifth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.row5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  background-color: 	#ADD8E6;
+  padding: 5%;
+  width: 100%;
+}
+
+.column5-right{
+display: flex;
+  flex: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.column5{
+  display: flex;
+  flex: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.image5{
+  object-fit: contain;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  /* margin-top: 20%; */
+}
+.select{
+  margin:0% 5% 0% 5%;
+}
+.select1{
+  margin:0% 5% 0% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .row5 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .content-fifth {
+    flex-direction: column;
+  }
+}
+
+/* for content six */
+
+.content-six{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.row6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 5%;
+  width: 100%;
+  position: relative;
+}
+
+.column6-right{
+display: flex;
+flex: 40.33%;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.column6{
+  display: flex;
+  flex: 25.33%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.column6-3{
+  display: flex;
+  flex: 31.33%;
+  width:100%;
+  flex-wrap: wrap;
+  background-color: rgb(180, 234, 234);
+  position: relative;
+  right: 5%;
+  padding: 14px;
+ margin-top: 10%;
+ /* for shadow */
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.next-back-icon{
+  position: absolute;
+  top: 5%;
+  left:90%;
+}
+
+.image6{
+  object-fit: contain;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  /* margin-top: 20%; */
+}
+@media screen and (max-width: 500px) {
+  .row6 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .content-six {
+    flex-direction: column;
+  }
+}
+
+
+/* for content 7 */
+
+.content-seven{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.row7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 5%;
+  width: 100%;
+}
+
+.column7-right{
+display: flex;
+  flex: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.column7{
+  display: flex;
+  flex: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.image7{
+  object-fit: contain;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  /* margin-top: 20%; */
+}
+
+@media screen and (max-width: 500px) {
+  .row7 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .content-seven {
+    flex-direction: column;
+  }
+}
+
+.content-eight{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0% 5% 0% 5%;
+}
+
+.card-item{
+display: flex;
+flex: 22.33%;
+background-color: white;
+margin: 2%;
+padding: 1%;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.cardarea{
+ display: flex;
+ flex-direction: column;
+ width: 80%;
+align-items: flex-start;
+flex-wrap: wrap;
+
+}
+
+.card-image{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+
+}
+
+@media (max-width: 600px) {
+  .card-item{
+    flex: 100%;
+  }
+}
