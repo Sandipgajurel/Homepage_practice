@@ -1,5 +1,5 @@
 /* style for navbar */
-.header-content{
+.header-content {
     height: auto;
     display: flex;
     flex-direction: row;
@@ -10,43 +10,48 @@
     justify-content: space-between;
     position: relative;
 }
-.first-col{
+
+.first-col {
     display: flex;
     height: auto;
     gap: 4em;
     width: auto;
     flex-wrap: wrap;
-    padding-left: 50px;
-    
+    /* padding-left: 50px; */
+
     align-items: center;
 }
-.second-col{
+
+.second-col {
     display: flex;
     height: auto;
     width: auto;
     flex-wrap: wrap;
-    
+
     align-items: center;
 }
-.third-col{
+
+.third-col {
     display: flex;
     height: auto;
     gap: 4em;
     width: auto;
     flex-wrap: wrap;
     padding-right: 50px;
-    
+
     align-items: center;
 }
-.text{
+
+.text {
     font-size: 17px;
 }
-.login-btn{
-width: 90px;
-padding: auto;
-border-color: blue;
-color: blue;
-padding: 10px;
-font-size: 15px;
-background-color: white;
+
+.login-btn {
+    width: 90px;
+    padding: auto;
+    border-color: blue;
+    color: blue;
+    padding: 10px;
+    font-size: 15px;
+    background-color: white;
 }
